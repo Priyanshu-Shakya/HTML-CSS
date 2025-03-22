@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ /*! POSITIONS */
+/*(top,bottom,left,right )*/
+
+
+ /* Position- (Static)...>bydefault    ...TBRL...doesn't work*/
+ #box1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: static;
+    left: 70vw;
+}
+ /* Position- (fixed) */
+
+ #box2{
+    height: 200px;
+    width: 100px;
+    background-color: yellow;
+    position: fixed; /*! janhan box hai vhi fix rhega screen pe, This is used to show adds in our website */
+    left: 85vw;
+    top: 20vh;
+}
+
+/* Position- (Sticky) */
+#box3{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: sticky; 
+    left: 40vw;
+    top: 30vh; /*! jasie hee scroll karne ke baad top se 30 ki heigt per ayega tab stick ho jayega tab scroll nhin hoga, vhi per and scroll can continue*/
+}
+
+
+/* Position- relative*/
+#box4{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    position: relative;  /*!we can scroll and use TBRL properties in that, but in static we can't use TBRL properties but can scroll*/
+    /* !it can be place also over any other element/box/text/... */
+    left: 20vw;
+    top: 15vh;
+}
+
+
+ /* Position- absolute */
+
+ #box5{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    position: absolute;  
+    left: 20vw;
+    /* top: 30vh; */
+    /* ! absolute ...mai scroll hota hai but, fixed mai nhin hota scroll */
+/* !relative mai current position se khin move karana hai to, and absolute mai view port se khin move karana hai to */
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+/*! decendent selector */
+/*
+ it will target direct child as well as indirect child,
+it is denoted by empty_space
+ */
+
+
+ section div{
+    background-color: skyblue;
+ }
+
+ /*! child selector */
+/*
+ it will target direct child,
+it is denoted by (>) symbol
+ */
+
+ section> div{
+    background-color: yellow;
+ }
+
+  /*! adjecent sibling */
+/*
+ it will target the next element present just after the closing of the targeted element,
+it is denoted by (+) symbol
+ */
+
+ section+ nav{
+    background-color: pink;
+ }
+
+  /*! general sibling */
+/*
+ it will target the all the others next elements present just after the closing of the targeted element,
+it is denoted by (~) symbol
+ */
+
+ section~ div{
+    background-color: red;
+ }

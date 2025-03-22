@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+#productcart{
+    height: 285.375px;
+    width: 1224.8px;
+    border: 1px solid black;
+
+    display: flex;
+    margin-left: 310px;
+}
+#productcart>aside{
+ height: 100%;
+}
+/* !leftaside */
+#productcart .leftaside{
+    background-color: white;
+    padding-top: 10px;
+
+    cursor: pointer; 
+   }
+   /* iphonebox */
+   #productcart .iphonebox{
+    width: 200px;
+    height: 230.575px;
+    padding-left: 46px ; 
+    padding-top: 13px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+   }
+   /* addtocompare */
+   #productcart .addtocompare{
+    padding-left: 25px;
+    display: flex;
+    gap: 10px;
+    color: rgb(78, 77, 77);
+    font-size: 14px;
+   }
+   #productcart .heading{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+
+
+/* !center aside */
+
+#productcart .centeraside{
+    width: 569.175px;
+    height: 230.575px;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding-top: 10px;
+
+    margin-left:50px;
+    text-align: left;
+
+    padding-left: 10px;
+    padding-top: 20px;
+   }
+   /* rating */
+   #productcart .rating{
+     display: flex;
+     padding-top: 3px;
+     gap: 8px;
+     margin-top: 5px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+
+
+/* star */
+  
+#productcart .star{
+    height: 18.4px;
+    width: 40.65px;
+    font-size: 12px;
+
+    font-weight: 800;
+    font-size: 1.2cap;
+
+    color: white;
+    background-color: #388E3C;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 2.5px;
+  } 
+
+/* review */
+   #productcart .review{
+    color: rgb(126, 123, 123);
+    font-size: medium;
+    font-size: 13px;
+    font-weight: 900;
+    text-decoration: solid;
+
+    word-spacing: 2px;
+    letter-spacing: 0px;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+   }
+/* uolist */
+#productcart .uolist{
+    margin-top: 10px;
+
+    color:#434141;
+    font-size: medium;
+    font-size: 15px;
+    line-height: 20.6px;
+
+    padding-left: 15px;
+   }
+   /* listcolor */
+   #productcart .uolist>li::marker{
+   color: rgb(183, 180, 180);
+   font-size: 13px;
+   }
+
+
+/* !right aside */
+
+#productcart .rightaside{
+    width: 406.513px;
+    height: 230.575px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+
+    padding-left: 19px;
+   }
+/* box1 */
+   #productcart .box1{
+    width: 114px;
+    height: 71px;
+    /* line-height: 25px; */
+   }
+
+   /* box2 */
+   #productcart .box2{
+   margin-top: 10px;
+   }
+
+
+
+   /* price */
+   #productcart .price{
+    font-size: 25px;
+    font-weight: 100;
+    color: #212121;
+     }
+
+     #productcart .off{
+         padding-top: 6px;
+         }
+     /* strike */
+     #productcart .strike{
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: #7d7e7d;
+        font-family: 'Frnklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-top: 300px;
+    }
+    /* 20off */
+    #productcart .off20 {
+     font-size: 15px;
+     font-weight: 550;
+     color: #26a541;
+     font-family: 'Times New Roman', Times, serif;
+     
+      }
+         /* freedelivery */
+    #productcart .freedelivery{
+        font-size: 12px;
+         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          padding-top: 7px;
+        }
+   /* save */
+   #productcart .saveextra{
+   font-size: 13px;
+   font-weight: 550;
+   color: #26a541;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 10px;
+   }
+    /* exchange */
+    #productcart .exchange{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        padding-top:4px;
+        }
+
+    .box{
+        display: flex;
+    }
+    #productcart .image{
+        margin-left: 18px;
+    }

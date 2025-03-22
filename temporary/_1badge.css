@@ -1,0 +1,29 @@
+.profile-container {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    /* !this is the main thing */
+    overflow: visible;
+    border: 6px solid rgb(180, 173, 173); /* Outer white border */
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+    display: block;
+    width: 100px; /* Adjust as needed */
+    height: 100px;
+    border-radius: 50%;
+}
+
+.ukraine-badge {
+
+    border-radius: 50%;
+    position: absolute;
+    left: 80px;
+    bottom: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to bottom, #0057B7 50%, #FFD700 50%);
+    border: 5px solid white;
+}

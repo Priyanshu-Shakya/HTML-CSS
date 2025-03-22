@@ -1,0 +1,56 @@
+/*! not visited page  */
+a:link{
+   color: aquamarine;
+}
+
+/*! already viseted page */
+a:visited{
+color: maroon;
+}
+
+/*! not visited click to visit */
+a:active{
+    color: blueviolet;
+}
+
+
+
+button:active{
+    color: blue;
+    background-color: lightgreen;
+}
+
+/* !first,last,nth - child*/
+
+ul > li:first-child{
+    background-color: yellow;
+}
+ul > li:nth-child(3){
+    background-color: green;
+}
+ul > li:last-child{
+    background-color: blue;
+}
+
+/*!first,last,th -Of-Type */
+section > div:first-Of-Type{
+    background-color: red;
+}
+section > div:nth-Of-Type(3){
+    background-color: purple;
+}
+
+section > nav:last-Of-Type{
+    background-color: orange;
+}
+
+section > article:nth-Of-Type(2){
+    background-color: cornflowerblue;
+}
+
+/* ! Hover */
+
+button:hover{
+    color: white;
+    background-color: blue;
+}

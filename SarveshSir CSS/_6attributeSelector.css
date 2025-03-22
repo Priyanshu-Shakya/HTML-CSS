@@ -1,0 +1,67 @@
+/* ! jis div ke ander "name" type ka attribute ho usme change hoga  */
+div[name]{
+    background-color: pink;
+}
+
+/* ! target a particular type of "name" attribute with their name  */
+
+div[name="box2"]{
+    background-color: orangered;
+}div[name="box3"]{
+    background-color: greenyellow;
+}
+
+/* !============================ */
+/* ! space targeted/sapertaed name attribute value using (~= one_name) */
+
+section[name~="box"]{
+    background-color: blue;
+}
+/*!  OR */
+
+/* section[name~="content"]{
+    background-color: blue;
+} */
+
+/* !============================ */
+/* ! space targeted/sapertaed name attribute value using (= full_name) */
+
+article[name="container-box"]{
+    background-color: aquamarine;
+}
+
+
+/* ! starts with name attribute value using (^= ) */
+
+nav[name^="nav"]{
+    background-color: chocolate;
+}
+/*! OR */
+
+/* nav[name="navbarcontainer"]{
+    background-color: chocolate;
+} */
+
+
+
+
+
+/* ! ends with name attribute value using ($=) */
+
+main[name$="ox"]{
+    background-color: blueviolet;
+}
+/*! OR */
+
+/* main[name="mainbox"]{
+    background-color: chocolate;
+} */
+
+
+
+
+/* ! inbetween with name attribute value using ($=) */
+
+footer[name*="am"]{
+    background-color: darkcyan;
+}

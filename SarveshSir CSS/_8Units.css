@@ -1,0 +1,71 @@
+/* universalselector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* pixels......it is acc.fixed value */
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+}
+
+/* 
+vh......height of viewport
+vw......width of viewport
+
+*/
+
+#box2{
+    height: 50vh;
+    width: 50vw;
+    background-color: blueviolet;
+}
+
+/* percentage.......value dependent on parent block */
+
+main{
+    height: 600px;
+    width: 600px;
+    background-color: green;
+}
+main>div{
+    height: 80%;
+    width: 50%;
+    background-color: black;
+}
+
+/* em.......CURRENT element ke font size per depend hota hai
+
+
+by default: 1em=16px
+
+*/
+
+article{
+    height: 2em;
+    width: 2em;
+
+    font-size: 100px; /*now box ki height and width 200*200 px hogi due to this font size if we not use this then by default 32*32px*/
+
+    background-color: aqua;
+}
+
+/* rem.......ROOT element ke font-size per depend hota hai
+
+
+by default: 1rem=16px
+
+*/
+
+
+footer{
+    height: 1rem;
+    width: 1rem;
+/*now the height and width acc. to root element */
+    background-color: chocolate;
+}
+

@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    /*p0.....shortcut*/
+    padding: 0;
+}
+
+
+/*! flex.....1D(in either row or column) ko ekk he direction mai use kar sakte hain */
+/* 
+flex direction by default row fromat mai hota hai,
+
+row reverse----go to opp
+*/
+
+
+/*! grid ........ko is a 2D align kar sakte hain  */
+/* ! parent elemnt mai flex use kiya to.....ye (FLEX-CONTAINER) kehlayega ->Sction */
+
+section {
+    height: 80vh;
+    width: 80vw;
+    background-color: lightgray;
+    margin: 10px auto;
+    /* top/bottom se left/right se bachi hue space ko auto le lega in both side*/
+    display: flex;
+    flex-direction: row;
+    /* row(default),column,row--reverse,column-reverse */
+
+    /*! to align (X-AXIS) the flex elements .....use JUSTIFY  CONTENT when we use display flex without it it can't work */
+    justify-content: center;
+    /* flex-start(default),flex-end,center,space-evenly,space-between,space-around */
+
+    /*! to align (Y-AXIS) the flex elements .....use ALIGN ITEMS  when we use display flex without it it can't work */
+    align-items: center;
+    /* flex-start(default),flex-end,center,space-evenly,space-between,space-around */
+
+
+
+    gap: 20px; /*when we want to give gap b/w flex items acc. to us*/
+
+}
+
+/* ! child elemnt ko flex kiya.....ye (FLEX-ELEMNT) kehlayega ->article */
+
+
+section>article {
+    height: 150px;
+    width: 150px;
+    background-color: darkorange;
+    border: 1px solid black;
+    font-size: 30px;
+
+}
+
+
+
+
+
+/* !  EXAMPLE 2 */
+
+main{
+    /* height : auto */
+    /* min-height :80vh; */
+    height: 100vh;
+    width: 80vw;
+    background-color: skyblue;
+    margin: 10px auto;
+
+    display: flex;
+    padding: 20px;/*all side*/
+    padding: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    overflow: scroll; /*! IMP*/
+    /*if min height nhin di rhi hogi then fix height mai hee scroll work karega jisse div bahar ni jayenge agar space kam bhu hua to*/
+
+}
+main>div{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+   border: 2px solid black;
+}

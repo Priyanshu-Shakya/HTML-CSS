@@ -1,0 +1,43 @@
+/* ! first-letter */
+p::first-letter{
+    font-size: 40px;
+    color: red;
+}
+/* ! first-line */
+p::first-line{
+color: blue;
+}
+/* ! selection -----when we select peragraph by cursor,then*/
+p::selection{
+    color: black;
+    background-color: yellowgreen;
+}
+
+/* ! before */
+
+h3::before{
+    content: "👋";
+}
+/* ! after */
+
+h3::after{
+    content: "🙂";
+}
+
+/* ! marker -----sirf or sirf list per kaam karta hai*/
+
+/* !jab bhi color ko different colour dena ho to */
+
+/* ul>li::marker{
+   color: green;
+}
+ol>li::marker{
+    color: red;
+ } */
+
+ /* ! marker -----sirf or sirf list per kaam karta hai*/
+
+ /* jab sabhi list ko same color dena ho to */
+ ::marker{
+    color: blue;
+ }

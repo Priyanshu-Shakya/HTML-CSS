@@ -1,0 +1,40 @@
+*{
+    /* box-sizing: content-box; ......>it means it take the full height and width of the content box/area */
+
+/* !so we  use this property in universal selector */
+    
+/* !use....> box-sizing: border-box; ......>it means it take the whole width and height of the box/container which we provide , size of box not increase during applying padding */
+/* !use....> margin:0; */
+/* !use....> padding:0; */
+margin: 0; /*automatic margin  from body...*/
+}
+
+
+
+main{
+    height: 100px;
+    width: 100px;
+    border: 10px solid black;
+    padding-left: 20px; /*while we gives padding without using (box-sizzing:border box) ,it will increases the size size of box during apply padding*/
+    padding-top: 20px;
+}
+section{
+    height: 100px;
+    width: 100px;
+    border: 10px solid black;
+    box-sizing: border-box; /*it will takes wholw height and width of the box */
+    padding-left: 20px;
+    padding-top: 20px;
+
+    margin-top: 10px;
+}
+
+
+
+/* ! margin:10px  .......................all sidex                   */
+/* ! margin:10px 20px  ..................T/B   L/R              */
+/* ! margin:10px 20px 30px  ...............T   L/R    R      */
+/* ! margin:10px 20px 30px 40px  ...........T    R    B  L   */
+
+/* Margin can take  -ve value */
+/* padding can't take or accept -ve value */

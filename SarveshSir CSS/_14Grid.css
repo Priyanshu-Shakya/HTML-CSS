@@ -1,0 +1,56 @@
+*{
+   padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#gridcontainer{
+    height: 70vh;
+    width: 80vw;
+    background-color: yellow;
+    margin: 100px auto;
+
+    display: grid; /* equally devide karega artcleas ko equal row mai if we inspect it  */
+    /*! grid-template-rows: 150px 120px 130px;   */
+   
+    /* grid-template-rows: 150px 120px;  .....>if  we don't give the last article particular height the, it will automatically covers full remaining height */
+   
+      /*! grid-template-columns: 1fr 1fr 1fr;  */
+      /*!use repeatfuccn() ----if we wants equally width of columns ...>*/
+      grid-template-columns: repeat(3,1fr);
+      /* grid-template-columns: 180px 130px 110px; */
+
+    justify-items: center;
+    /* x-direction mai cell ke cemtre mai aa jayega */
+
+    align-items: center;
+    /* y-directon ke centre mai aa jayega */
+
+
+
+   /* row-gap: 50px;
+   column-gap: 30px; 
+     short-hand👇 */
+   gap: 50px 30px;
+
+}
+
+.items{
+height: 100px;
+width: 100px;
+background-color: red;
+border: 2px solid black
+}
+
+/* ! justify-items and align-items are works on whole container */
+/*!justify-self.....> to adjust a particular item then we use a particular class for that */
+.item2{
+    justify-self: flex-start;
+    align-self: flex-start;
+    }
+
+.item6{
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+
+

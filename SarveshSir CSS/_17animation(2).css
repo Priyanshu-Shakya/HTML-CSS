@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ #container{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    position: absolute;
+    /* box-shadow: 10px 10px 10px black; */
+     
+    animation-name: move;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear ;
+    
+}
+
+@keyframes move{
+
+    /*! this is devided into time duration */
+    0%{
+      top: 0;
+      left: 0;
+      
+      box-shadow: 0px 0px 5px black;
+      /* !rotation */
+      /* transform: rotate(0deg); */
+    }
+    25%{
+        top:0;
+        left:calc(100% - 200px);
+
+        box-shadow: -20px 0px 5px black;
+
+    }
+    50%{
+        top:calc(100vh - 200px);
+        left:calc(100% - 200px);  
+        
+        box-shadow: 0px -20px 5px black;
+
+    }
+    75%{
+        top:calc(100vh - 200px);
+        left:0;
+
+        box-shadow: 20px 0px 5px black;
+    }
+    100%{
+        top: 0;
+      left: 0;
+      box-shadow: 0px 20px 5px black;
+      
+      /* transform: rotate(360deg); */
+    }
+}
+
+
+
+/* #box{
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+    margin: 100px 300px;
+    transform: rotate(45deg);
+    box-shadow: 10px 10px 10px black;
+
+
+    position: absolute;
+} */

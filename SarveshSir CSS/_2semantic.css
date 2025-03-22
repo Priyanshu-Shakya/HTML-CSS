@@ -1,0 +1,65 @@
+
+
+/* ! Universal selector   */
+/* it is the propert which is used for whole  page or body */
+/* it is a good practice to write at top---for easy to understand to other developers */
+
+*{
+    font-family: cursive;
+    background-color: azure;
+}
+
+
+
+/* id */
+#sub-heading{
+    
+    background-color: yellow;
+}
+
+/* class */
+.sub-heading2{
+    background-color: lightgreen;
+}
+
+/* tagname */
+div{
+    background-color: blueviolet;
+}
+
+/* class */
+.content{
+    background-color: purple;
+}
+.content2{
+    background-color: pink; /* targeted particularly */
+}
+
+/* group selector */
+nav,aside,footer{
+    background-color: chocolate;
+}
+#aside2{
+    background-color: aquamarine; /* targeted particularly */
+}
+
+/* GOOGLE css */
+.b{
+    color: blue;
+}
+.r{
+    color: red;
+}
+.y{
+    color: yellow;
+}
+.g{
+    color: lightgreen;
+}
+
+#google{
+    font-size: 80px;
+  text-decoration: solid;
+    /* font-family: ; */
+    
+}
